@@ -26,5 +26,9 @@
                 echo 'mvn package'
             }
         }
+     
+        stage('Slack message') {
+            slackSend color: '#BADA55', message: 'successfull!!'
+        }
     }
 }
