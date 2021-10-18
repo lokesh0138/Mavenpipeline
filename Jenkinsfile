@@ -28,7 +28,9 @@
         }
      
         stage('Slack message') {
+         steps{
             slackSend color: '#BADA55', message: 'successfull!!'
+        }
         }
     }
 }
